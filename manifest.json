@@ -1,0 +1,22 @@
+{
+    "manifest_version": 3,
+    "name": "PhishCheck",
+    "version": "1.0",
+    "description": "Check current tab URL with your Phishing Detection API",
+    "permissions": ["tabs", "storage", "scripting", "activeTab", "notifications"],
+    "host_permissions": [
+      "https://your-backend.example.com/*"
+    ],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "icon16.png",
+        "48": "icon48.png",
+        "128": "icon128.png"
+      }
+    }
+  }
+  
